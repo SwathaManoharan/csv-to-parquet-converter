@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.aws_region
+  region = "ap-south-1"
 }
 
 
@@ -34,8 +34,8 @@ module "iam" {
 }
 
 module "codepipeline" {
-  source             = "./modules/codepipeline"
-  project_name       = "csv-to-parquet"
+  source               = "./modules/codepipeline"
+  project_name         = "csv-to-parquet"
   github_repo_url      = "https://github.com/SwathaManoharan/csv-to-parquet-converter.git"
   github_owner         = "SwathaManoharan"
   github_repo_name     = "csv-to-parquet-converter"

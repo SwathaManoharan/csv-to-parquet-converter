@@ -73,7 +73,7 @@ resource "aws_codepipeline" "tf_pipeline" {
         Owner      = var.github_owner
         Repo       = var.github_repo_name
         Branch     = var.github_branch
-        OAuthToken = var.github_oauth_token
+        OAuthToken = var.repo_token
       }
     }
   }

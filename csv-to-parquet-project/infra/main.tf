@@ -36,10 +36,10 @@ module "iam" {
 module "codepipeline" {
   source             = "./modules/codepipeline"
   project_name       = "csv-to-parquet"
-  github_repo_url    = "https://github.com/<your-username>/<repo-name>"
-  github_owner       = "<your-username>"
-  github_repo_name   = "<repo-name>"
-  github_branch      = "main"
-  github_oauth_token = var.github_oauth_token
+  github_repo_url      = "https://github.com/SwathaManoharan/csv-to-parquet-converter.git"
+  github_owner         = "SwathaManoharan"
+  github_repo_name     = "csv-to-parquet-converter"
+  github_branch        = "main"
+  repo_token = var.repo_token
 }
 
